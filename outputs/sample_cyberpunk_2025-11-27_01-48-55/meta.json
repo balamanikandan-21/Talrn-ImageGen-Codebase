@@ -1,0 +1,13 @@
+{
+    "user_prompt": "A futuristic city with neon lights",
+    "enhanced_prompt": "A futuristic city with neon lights, Cyberpunk style, detailed, 8k",
+    "negative_prompt": "blurry, low quality",
+    "style": "Cyberpunk",
+    "device": "cpu",
+    "inference_settings": {
+        "steps": 20,
+        "guidance_scale": 7.5
+    },
+    "timestamp": "2025-11-27_01-48-55",
+    "generation_time_seconds": 12.5
+}
