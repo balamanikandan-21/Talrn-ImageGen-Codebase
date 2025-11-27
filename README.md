@@ -95,6 +95,20 @@ The codebase is organized for scalability:
 *   `app.py`: Frontend logic and state management.
 *   `image_generator.py`: Encapsulated backend logic, separating UI from ML operations.
 *   `outputs/`: Structured storage with timestamped folders for asset management.
+  ---
+
+  GPU (Recommended)
+Hardware: NVIDIA GPU with CUDA support.
+VRAM:
+Minimum: 4GB (The code uses float16 and enables attention slicing to support this).
+Recommended: 8GB or more for faster generation and larger batch sizes.
+Software: CUDA-compatible drivers installed.
+CPU (Fallback)
+RAM:
+Minimum: 12GB System RAM.
+Recommended: 16GB+ System RAM (The model runs in float32 mode on CPU, which consumes more memory).
+Performance: Generation will be significantly slower on CPU (minutes vs. seconds). A modern multi-core processor (Intel i5/i7/i9 or AMD Ryzen 5/7/9) is highly recommended.
+Note: The application automatically detects if a GPU is available and defaults to it. If not, it falls back to CPU mode.
 
 ---
 
